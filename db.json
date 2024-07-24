@@ -1,0 +1,74 @@
+{
+  "pengguna": [
+    {
+      "id": "1",
+      "nama": "Awal Rafi Hardika",
+      "email": "Manukemprit25@gmail.com",
+      "jenis_kelamin": "pria",
+      "tanggal_lahir": "2000-08-17",
+      "alamat": {
+        "rt": "04",
+        "rw": "02",
+        "jalan": "Jl Raya Kediri",
+        "desa": "Kediri",
+        "kecamatan": "Karanglewas"
+      }
+    },
+    {
+      "id": "2",
+      "nama": "Angga Goditvia",
+      "email": "Goditvia@gmail.com",
+      "jenis_kelamin": "pria",
+      "tanggal_lahir": "2005-06-15",
+      "alamat": {
+        "rt": "01",
+        "rw": "03",
+        "jalan": "Jl MegaMendung",
+        "desa": "Sawangan",
+        "kecamatan": "Jatilan"
+      }
+    },
+    {
+      "id": "3",
+      "nama": "Fikri boy",
+      "email": "Fboy@gmail.com",
+      "jenis_kelamin": "pria",
+      "tanggal_lahir": "2001-01-15",
+      "alamat": {
+        "rt": "01",
+        "rw": "09",
+        "jalan": "Jl Raya Cibereum",
+        "desa": "Tangerang",
+        "kecamatan": "Tangerang Kota"
+      }
+    },
+    {
+      "id": "4",
+      "nama": "Asep Kumaha Damang",
+      "email": "Asepkasep@gmail.com",
+      "jenis_kelamin": "pria",
+      "tanggal_lahir": "2004-09-15",
+      "alamat": {
+        "rt": "03",
+        "rw": "04",
+        "jalan": "Jl Raya Cireng",
+        "desa": "Tangerang Selatan",
+        "kecamatan": "Tangerang Kota"
+      }
+    },
+    {
+      "id": "f197",
+      "nama": "Aretha Tate",
+      "email": "sawi@mailinator.com",
+      "jenis_kelamin": "pria",
+      "tanggal_lahir": "1995-10-13",
+      "alamat": {
+        "rt": "Quae sit voluptatum",
+        "rw": "Atque cum qui aliqui",
+        "jalan": "Ut dignissimos excep",
+        "desa": "Nemo adipisci tempor",
+        "kecamatan": "Eos non maxime assu"
+      }
+    }
+  ]
+}

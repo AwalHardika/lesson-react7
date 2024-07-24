@@ -1,0 +1,49 @@
+### GET ALL PENGGUNA
+GET http://localhost:3000/pengguna
+Content-Type: "application/json"
+
+###GET PENGGUNA By Id
+GET http://localhost:3000/pengguna/2
+Content-Type: "application/json"
+
+###CREATE PENGGUNA
+POST http://localhost:3000/pengguna
+Content-Type: "application/json"
+
+    {
+        "nama" : "Asep Kumaha",
+        "email" : "Asepkasep@gmail.com",
+        "jenis_kelamin" : "pria",
+        "tanggal_lahir" : "2004-09-15",
+        "alamat" : {
+            "rt" : "03",
+            "rw" : "04",
+            "jalan" : "Jl Raya Cireng",
+            "desa" : "Tangerang Selatan",
+            "kecamatan" : "Tangerang Kota"
+        }
+    }
+
+###EDIT PENGGUNA BY ID PENGGUNA
+PUT http://localhost:3000/pengguna/4
+Content-Type: "application/json"
+
+    {
+        "id" : "4",
+        "nama" : "Asep Kumaha Damang",
+        "email" : "Asepkasep@gmail.com",
+        "jenis_kelamin" : "pria",
+        "tanggal_lahir" : "2004-09-15",
+        "alamat" : {
+            "rt" : "03",
+            "rw" : "04",
+            "jalan" : "Jl Raya Cireng",
+            "desa" : "Tangerang Selatan",
+            "kecamatan" : "Tangerang Kota"
+        }
+    }
+
+    
+    
+
+
