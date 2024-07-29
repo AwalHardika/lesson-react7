@@ -1,51 +1,25 @@
-import axios from 'axios';
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
+import React, { useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 
-const AddUser = () => {
-  const navigate = useNavigate()
+const EditUser = () => {
+    const [queryParams] = useSearchParams()
+    let id = queryParams.get("id")
     
-    async function handleSubmit(event){
-    //cegah agar form tidak reload saat submit
-    event.preventDefault();
-    const newUser = {
-      nama : event.target.fullname.value,
-      email : event.target.email.value,
-      jenis_kelamin : event.target.jenis_kelamin.value,
-      tanggal_lahir : event.target.bod.value,
-      alamat : {
-        rt : event.target.rt.value,
-        rw : event.target.rw.value,
-        jalan : event.target.jalan.value,
-        desa : event.target.desa.value,
-        kecamatan : event.target.kecamatan.value
-      }
-    }
-
-    if(!newUser.nama || !newUser.email ||!newUser.jenis_kelamin || !newUser.alamat.rt || !newUser.alamat.rw || !newUser.alamat.jalan || !newUser.alamat.desa || !newUser.alamat.kecamatan){
-      alert("Isi data dengan benar")
-      return
-    }
-
-    try {
-      await axios.post("http://localhost:3000/pengguna", newUser, {
-        "Content-Type" : "application/json"
-      } )
-      alert("Data sudah terkirim")
-      navigate("/listuser")
-    } catch (error) {
-      console.log(error)
-    }
-
-    
-  }
-
-  return (
-    <div className={`w-[100dvw] min-h-[100dvh] max-w-[900px] bg-slate-100 mx-auto flex flex-col items-center`}>
-        <h1>
-          Tambah Pengguna
-        </h1>
-        <form onSubmit={handleSubmit} className={`w-[300px] h-auto p-4 bg-white rounded-lg flex flex-col gap-2 shadow-lg mt-6`}>
+    useEffect(()=>{
+        try {
+            axios.get(`http://localhost:3000/pengguna/${id}`)
+            .then(res=>{
+                console.log(res)
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    },[])
+    return (
+    <div>   
+        <h1>EDIT USER</h1>
+        <form className={`w-[300px] h-auto p-4 bg-white rounded-lg flex flex-col gap-2 shadow-lg mt-6`}>
           <div className={`flex flex-col gap-2`}>
           <label htmlFor="fullname">
             Fulname
@@ -132,4 +106,4 @@ const AddUser = () => {
   )
 }
 
-export default AddUser
+export default EditUser

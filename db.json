@@ -55,20 +55,6 @@
         "desa": "Tangerang Selatan",
         "kecamatan": "Tangerang Kota"
       }
-    },
-    {
-      "id": "f197",
-      "nama": "Aretha Tate",
-      "email": "sawi@mailinator.com",
-      "jenis_kelamin": "pria",
-      "tanggal_lahir": "1995-10-13",
-      "alamat": {
-        "rt": "Quae sit voluptatum",
-        "rw": "Atque cum qui aliqui",
-        "jalan": "Ut dignissimos excep",
-        "desa": "Nemo adipisci tempor",
-        "kecamatan": "Eos non maxime assu"
-      }
     }
   ]
 }
